@@ -4,7 +4,8 @@
   "description": "notes app with hapi javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./src/server.js",
+    "lint": "eslint ./src"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,14 @@
   "bugs": {
     "url": "https://github.com/iFazarillah/notes-app-be/issues"
   },
-  "homepage": "https://github.com/iFazarillah/notes-app-be#readme"
+  "homepage": "https://github.com/iFazarillah/notes-app-be#readme",
+  "devDependencies": {
+    "eslint": "^8.39.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.3.1",
+    "nanoid": "^3.3.6"
+  }
 }
